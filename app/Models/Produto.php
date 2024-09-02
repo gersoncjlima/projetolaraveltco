@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Produto extends Model
 {
     use HasFactory;
+
+    protected $fillabre = [
+        'descricao', 'quantidade', 'precoUnitario', 'precoVenda'
+    ];
 }
